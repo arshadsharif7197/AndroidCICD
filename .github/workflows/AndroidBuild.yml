@@ -1,5 +1,5 @@
-name: AndroidBuild
-on:
+ name: AndroidBuild
+ on:
   pull_request :
     branches: [ master ]
     push :
@@ -7,7 +7,7 @@ on:
 
   jobs:
     build:
-      runs-on : ubuntu-latest
+      runs-on : windows-latest
       steps:
         - name : Checkout
           uses : actions/checout@v4.1.0
